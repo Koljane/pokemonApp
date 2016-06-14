@@ -20,8 +20,24 @@
 		378392551D00293E0025AFBA /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378392541D00293E0025AFBA /* Pokemon.swift */; };
 		378392581D003ADA0025AFBA /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378392571D003ADA0025AFBA /* PokeCell.swift */; };
 		37D1D6BE1D0B029400E263EA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1D6BD1D0B029400E263EA /* Constants.swift */; };
+		37D712EB1D0EEBB2001CA625 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D712EA1D0EEBB2001CA625 /* Alamofire.framework */; };
+		37D712EC1D0EEBB2001CA625 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37D712EA1D0EEBB2001CA625 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		634EEBF83EEFD35E09FD5C23 /* Pods_pokedex_by_kolja.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792DC9491BAA93A76CB5BFA7 /* Pods_pokedex_by_kolja.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		37D712ED1D0EEBB3001CA625 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				37D712EC1D0EEBB2001CA625 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0BF55E3F98D506D0D93635E4 /* Pods-pokedex-by-kolja.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokedex-by-kolja.release.xcconfig"; path = "Pods/Target Support Files/Pods-pokedex-by-kolja/Pods-pokedex-by-kolja.release.xcconfig"; sourceTree = "<group>"; };
@@ -40,6 +56,7 @@
 		378392541D00293E0025AFBA /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		378392571D003ADA0025AFBA /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		37D1D6BD1D0B029400E263EA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		37D712EA1D0EEBB2001CA625 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Alamofire.framework; path = "/Users/Funky/Library/Developer/Xcode/DerivedData/pokedex-by-kolja-fiwvpvksruxzpuekuwloeidhyzbd/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<absolute>"; };
 		69AA315E251865AC9AE6D5C9 /* Pods-pokedex-by-kolja.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokedex-by-kolja.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pokedex-by-kolja/Pods-pokedex-by-kolja.debug.xcconfig"; sourceTree = "<group>"; };
 		792DC9491BAA93A76CB5BFA7 /* Pods_pokedex_by_kolja.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokedex_by_kolja.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -50,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				634EEBF83EEFD35E09FD5C23 /* Pods_pokedex_by_kolja.framework in Frameworks */,
+				37D712EB1D0EEBB2001CA625 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +105,7 @@
 		378392331D0023640025AFBA = {
 			isa = PBXGroup;
 			children = (
+				37D712EA1D0EEBB2001CA625 /* Alamofire.framework */,
 				3783923E1D0023640025AFBA /* pokedex-by-kolja */,
 				3783923D1D0023640025AFBA /* Products */,
 				EBF68DC63EEC972FB4EE600B /* Pods */,
@@ -165,6 +184,7 @@
 				3783923A1D0023640025AFBA /* Resources */,
 				89E0C386C3F2CF12FD8A6BEE /* [CP] Embed Pods Frameworks */,
 				B3BBF7A4CF7AD0745FBC745A /* [CP] Copy Pods Resources */,
+				37D712ED1D0EEBB3001CA625 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
