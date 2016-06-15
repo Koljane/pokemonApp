@@ -28,13 +28,14 @@ class PokemonDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        nameLbl.text = pokemon.name
+        nameLbl.text = pokemon.name.capitalizedString
         let img = UIImage(named: "\(pokemon.pokedexId)")
         mainImg.image = img
         curentEvoImg.image = img
         
         
         pokemon.downloadPokemonDetails { () -> () in
+            self.updateUI()
             // this will be called after downloaded is done
         }
     }
@@ -60,8 +61,6 @@ class PokemonDetailVC: UIViewController {
                 str += " - LVL \(pokemon.nextEvolutionLvl)"
             }
         }
-        
-        
         
     }
 
